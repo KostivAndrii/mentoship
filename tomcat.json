@@ -62,6 +62,7 @@
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094"
                 ]
             },
@@ -71,13 +72,14 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 700,
-                    "y": 60
+                    "x": 710,
+                    "y": 50
                 },
                 "z": 2,
                 "parent": "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
                 "embeds": [],
                 "iscontainedinside": [
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
                     "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
                     "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
                     "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
@@ -163,6 +165,7 @@
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094"
                 ]
             },
@@ -178,7 +181,11 @@
                 "z": 2,
                 "parent": "be08fd38-3dca-44c6-9cd5-8fad04847c62",
                 "embeds": [],
+                "isassociatedwith": [
+                    "b66a83fb-f88e-4235-aa9c-fc25c65597d6"
+                ],
                 "iscontainedinside": [
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
                     "be08fd38-3dca-44c6-9cd5-8fad04847c62",
                     "be08fd38-3dca-44c6-9cd5-8fad04847c62",
                     "be08fd38-3dca-44c6-9cd5-8fad04847c62",
@@ -220,6 +227,7 @@
                 "parent": "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                 "embeds": [],
                 "iscontainedinside": [
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
@@ -397,6 +405,12 @@
                 "KeyName": {
                     "Ref": "KeyName"
                 },
+                 "Tags" : [
+            {
+                "Key" : "Stage",
+                "Value" : "QA"
+            }
+       ],
                 "NetworkInterfaces": [
                     {
                         "GroupSet": [
@@ -411,44 +425,9 @@
                             "Ref": "PublicSubnet"
                         }
                     }
-                ],
-                "UserData": {
-                    "Fn::Base64": {
-                        "Fn::Join": [
-                            "",
-                            [
-                                "#!/bin/bash -xe\n",
-                                "yum install -y aws-cfn-bootstrap\n",
-                                "# Install the files and packages from the metadata\n",
-                                "/opt/aws/bin/cfn-init -v ",
-                                "         --stack ",
-                                {
-                                    "Ref": "AWS::StackName"
-                                },
-                                "         --resource WebServerInstance ",
-                                "         --configsets All ",
-                                "         --region ",
-                                {
-                                    "Ref": "AWS::Region"
-                                },
-                                "\n",
-                                "# Signal the status from cfn-init\n",
-                                "/opt/aws/bin/cfn-signal -e $? ",
-                                "         --stack ",
-                                {
-                                    "Ref": "AWS::StackName"
-                                },
-                                "         --resource WebServerInstance ",
-                                "         --region ",
-                                {
-                                    "Ref": "AWS::Region"
-                                },
-                                "\n"
-                            ]
-                        ]
-                    }
-                }
+                ]
             },
+            
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
                     "id": "0c22f577-5ad2-4740-933c-e5d3e8dcdded"
