@@ -1,0 +1,19 @@
+---
+# User name
+user: tomcat
+# Group name
+group: tomcat
+# Home  folder path for tomcat user
+home_path: /opt/tomcat
+#Shell path for uset tomcat
+shell_path: /bin/false
+#Link for Tomcat download
+download_url: http://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 
+# Tomcat donload  location
+d_path: /tmp/apache-tomcat-8.5.34.tar.gz 
+#Tomcat user configuration file path
+u_path: /opt/tomcat/apache-tomcat-8.5.34/conf
+# Tomcat host manager file path
+h_path:  /opt/tomcat/apache-tomcat-8.5.34/webapps/host-manager/META-INF/
+# Tomcat  manager file path
+m_path: /opt/tomcat/apache-tomcat-8.5.34/webapps/manager/META-INF/

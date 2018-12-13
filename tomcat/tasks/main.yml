@@ -1,0 +1,78 @@
+---
+- name: Install Java 
+  apt: name=default-jdk state=present
+
+- name: add group "tomcat"
+  group: 
+    name: "{{ group }}"
+    state: present
+
+- name: add user "tomcat"
+  user:
+    name: "{{ user }}"
+    shell: "{{ shell_path }}"
+    group: "{{ group }}"
+    home: "{{ home_path }}"
+  
+- name: Download Tomcat
+  get_url: 
+    url: "{{ download_url }}"
+    dest: "{{ d_path }}"
+  
+- name: create tomcat directory
+  file:
+    path: "{{ home_path }}"
+    state: directory
+
+- name: add permissions to archive
+  file: 
+    path: "{{ d_path }}"
+    mode: 0777 
+    
+    
+- name: Extract apache-tomcat-8.5.34.tar.gz /opt/tomcat/
+  unarchive:
+    src: "{{ d_path }}"
+    dest: "{{ home_path }}"
+    copy: no
+    #extra_opts: [--strip-components=1]
+
+- name: Change ownership of Tomcat installation
+  file: 
+    path: "{{ home_path }}"
+    owner: "{{ user }}"
+    group: "{{ group }}"
+    mode: 0777 
+    recurse: yes
+
+- name: create the systemd service file
+  template: 
+    src: tomcat.service 
+    dest: /etc/systemd/system/
+
+
+- name: Configure Tomcat User
+  template: 
+    src: tomcat-users.xml 
+    dest: "{{ u_path }}"
+  notify: restart tomcat
+
+
+- name: Configure Tomcat Host Manager
+  template: 
+    src: context.xml 
+    dest: "{{ item }}"
+  with_items:
+     - "{{ m_path }}"
+     - "{{ h_path}}"
+  notify: restart tomcat
+  
+
+- name: reload daemon
+  command: systemctl daemon-reload
+  
+- name: Start Tomcat
+  service: 
+    name: tomcat 
+    state: started
+    enabled: yes

@@ -63,6 +63,14 @@
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094"
                 ]
             },
@@ -73,12 +81,20 @@
                 },
                 "position": {
                     "x": 710,
-                    "y": 50
+                    "y": 40
                 },
                 "z": 2,
                 "parent": "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
                 "embeds": [],
                 "iscontainedinside": [
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
+                    "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
                     "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
                     "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
                     "060f8c2a-33bb-4272-82ba-9a6613a1f6f2",
@@ -166,6 +182,14 @@
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094"
                 ]
             },
@@ -208,6 +232,14 @@
                     "be08fd38-3dca-44c6-9cd5-8fad04847c62",
                     "be08fd38-3dca-44c6-9cd5-8fad04847c62",
                     "be08fd38-3dca-44c6-9cd5-8fad04847c62",
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
+                    "be08fd38-3dca-44c6-9cd5-8fad04847c62",
                     "be08fd38-3dca-44c6-9cd5-8fad04847c62"
                 ],
                 "dependson": [
@@ -227,6 +259,14 @@
                 "parent": "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                 "embeds": [],
                 "iscontainedinside": [
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
+                    "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
                     "64cd5c5e-61ab-4fa9-9bcb-e77ff1cce094",
@@ -349,6 +389,12 @@
                     },
                     {
                         "IpProtocol": "tcp",
+                        "FromPort": "8080",
+                        "ToPort": "8080",
+                        "CidrIp": "0.0.0.0/0"
+                    },
+                    {
+                        "IpProtocol": "tcp",
                         "FromPort": "22",
                         "ToPort": "22",
                         "CidrIp": {
@@ -382,35 +428,25 @@
         "WebServerInstance": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "InstanceType": {
-                    "Ref": "InstanceType"
-                },
+                "InstanceType": "t2.micro",
                 "ImageId": {
                     "Fn::FindInMap": [
-                        "AWSRegionArch2AMI",
+                        "Region2AMI",
                         {
                             "Ref": "AWS::Region"
                         },
-                        {
-                            "Fn::FindInMap": [
-                                "AWSInstanceType2Arch",
-                                {
-                                    "Ref": "InstanceType"
-                                },
-                                "Arch"
-                            ]
-                        }
+                        "AMI"
                     ]
                 },
                 "KeyName": {
                     "Ref": "KeyName"
                 },
-                 "Tags" : [
-            {
-                "Key" : "Stage",
-                "Value" : "QA"
-            }
-       ],
+                "Tags": [
+                    {
+                        "Key": "Test",
+                        "Value": "Tomcat"
+                    }
+                ],
                 "NetworkInterfaces": [
                     {
                         "GroupSet": [
@@ -425,9 +461,20 @@
                             "Ref": "PublicSubnet"
                         }
                     }
-                ]
+                ],
+                "UserData": {
+                    "Fn::Base64": {
+                        "Fn::Join": [
+                            "",
+                            [
+                                "#!/bin/bash -xe\n",
+                                "apt-get update -y\n",
+                                "apt-get install -y python-setuptools\n"
+                            ]
+                        ]
+                    }
+                }
             },
-            
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
                     "id": "0c22f577-5ad2-4740-933c-e5d3e8dcdded"
@@ -440,7 +487,7 @@
                     },
                     "ConfigureSampleApp": {
                         "packages": {
-                            "yum": {
+                            "apt": {
                                 "httpd": []
                             }
                         },
@@ -545,14 +592,9 @@
         }
     },
     "Mappings": {
-        "AWSInstanceType2Arch": {
-            "t2.micro": {
-                "Arch": "HVM64"
-            }
-        },
-        "AWSRegionArch2AMI": {
+        "Region2AMI": {
             "us-west-2": {
-                "HVM64": "ami-8786c6b7"
+                "AMI": "ami-076e276d85f524150"
             }
         }
     }
