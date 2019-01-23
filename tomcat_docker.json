@@ -444,7 +444,7 @@
                 "Tags": [
                     {
                         "Key": "Test",
-                        "Value": "Tomcat"
+                        "Value": "Docker"
                     }
                 ],
                 "NetworkInterfaces": [
@@ -470,14 +470,19 @@
                                 "#!/bin/bash -xe\n",
                                 "apt-get update -y\n",
                                 "apt-get install -y python-setuptools\n",
+                                "apt-get install git\n",
                                 "apt-get update -y\n",
+                                "mkdir /home/ubuntu/git\n",
+                                "cd /home/ubuntu/git\n",
+                                "git clone https://github.com/koltysh/mentoship.git\n",
+                                "export GIT_PATH=/home/ubuntu/git/mentoship/tomcat/templates\n",
                                 "apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D\n",
                                 "apt-add-repository 'deb https://apt.dockerproject.org/repo ubuntu-xenial main'\n",
                                 "apt-get update -y\n",
                                 "apt-get install -y docker-engine\n",
                                 "usermod -aG docker ubuntu\n",
                                 "docker pull tomcat\n",
-                                "docker run -p 8080:8080 tomcat:latest\n"
+                                "docker run -p 8080:8080 -v $GIT_PATH/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml -v $GIT_PATH/context.xml:/usr/local/tomcat/webapps/host-manager/context.xml -v $GIT_PATH/context.xml:/usr/local/tomcat/webapps/manager/context.xml  tomcat:latest \n"
                             ]
                         ]
                     }
