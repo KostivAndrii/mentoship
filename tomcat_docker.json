@@ -482,7 +482,7 @@
                                 "apt-get install -y docker-engine\n",
                                 "usermod -aG docker ubuntu\n",
                                 "docker pull tomcat\n",
-                                "docker run -p 8080:8080 -v $GIT_PATH/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml -v $GIT_PATH/context.xml:/usr/local/tomcat/webapps/host-manager/context.xml -v $GIT_PATH/context.xml:/usr/local/tomcat/webapps/manager/context.xml  tomcat:latest \n"
+                                "docker run -p 8080:8080 -v $GIT_PATH/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml -v $GIT_PATH/context.xml:/usr/local/tomcat/webapps/host-manager/META-INF/context.xml -v $GIT_PATH/context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml  tomcat:latest \n"
                             ]
                         ]
                     }
